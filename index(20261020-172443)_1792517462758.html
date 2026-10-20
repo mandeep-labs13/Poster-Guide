@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17243a">
+<title>Poster Program Guide</title>
+<style>
+:root{--navy:#17243a;--blue:#3979bd;--blue2:#eaf2fb;--teal:#168a83;--gold:#d99a2b;--ink:#202938;--muted:#657386;--line:#dce4ed;--bg:#f5f7fa;--white:#fff;--red:#b64242;--green:#277a4b;--shadow:0 12px 35px rgba(23,36,58,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}button,input{font:inherit}button{cursor:pointer}.shell{max-width:1180px;margin:auto;padding:18px}.topbar{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 16px #17243a1c}.top-inner{max-width:1180px;margin:auto;padding:12px 18px;display:flex;gap:14px;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}.brand-mark{width:36px;height:36px;border-radius:11px;background:linear-gradient(145deg,#5e9be0,#168a83);display:grid;place-items:center;font-weight:900}.top-actions{display:flex;gap:8px;align-items:center}.btn{border:1px solid var(--line);background:white;color:var(--navy);padding:9px 13px;border-radius:10px;font-weight:700;font-size:.9rem}.btn.primary{background:var(--blue);color:white;border-color:var(--blue)}.btn.ghost{background:#ffffff12;border-color:#ffffff35;color:white}.hero{background:linear-gradient(120deg,#17243a 0%,#243f62 64%,#187b7a 100%);border-radius:22px;padding:clamp(24px,5vw,52px);color:white;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:280px;height:280px;border:1px solid #ffffff20;border-radius:50%;right:-70px;top:-100px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff05}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;font-weight:800;color:#b8d7f6}.hero h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.05;letter-spacing:-.04em;margin:12px 0}.hero p{max-width:660px;color:#dce7f4;font-size:1.05rem}.journey{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px;align-items:center}.journey span{background:#ffffff15;border:1px solid #ffffff30;padding:8px 12px;border-radius:99px;font-size:.88rem;font-weight:750}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.stat,.panel,.stage-card,.content-card{background:var(--white);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.stat{padding:16px}.stat strong{font-size:1.6rem;color:var(--navy);display:block}.stat span{color:var(--muted);font-size:.87rem}.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:20px;align-items:start;margin-top:22px}.sidebar{position:sticky;top:78px;background:white;border:1px solid var(--line);border-radius:17px;padding:12px}.side-label{font-size:.72rem;color:var(--muted);font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:8px 10px}.nav-btn{display:flex;width:100%;text-align:left;align-items:center;gap:10px;border:0;background:transparent;color:var(--ink);padding:10px;border-radius:10px;font-weight:700;font-size:.9rem;margin:2px 0}.nav-btn:hover,.nav-btn.active{background:var(--blue2);color:#245b91}.nav-num{width:25px;height:25px;border-radius:8px;background:#eef1f5;display:grid;place-items:center;font-size:.75rem;flex-shrink:0}.nav-btn.active .nav-num{background:var(--blue);color:white}.progress-wrap{padding:13px 10px 8px}.progress-top{display:flex;justify-content:space-between;font-size:.82rem;font-weight:800}.progress-track{height:8px;background:#e9edf2;border-radius:9px;overflow:hidden;margin-top:8px}.progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--teal));transition:width .25s}.main{min-width:0}.section{display:none;animation:fade .18s ease}.section.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(3px)}to{opacity:1;transform:none}}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin:4px 0 16px}.section-head h2{margin:0;color:var(--navy);font-size:clamp(1.55rem,3vw,2.1rem);letter-spacing:-.03em}.section-head p{color:var(--muted);margin:6px 0 0}.pill{white-space:nowrap;border-radius:99px;background:var(--blue2);color:#245b91;padding:6px 10px;font-size:.78rem;font-weight:800}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.panel{padding:18px;margin-bottom:14px}.panel h3{margin:0 0 8px;font-size:1.04rem;color:var(--navy)}.muted{color:var(--muted)}.small{font-size:.86rem}.stage-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.stage-card{padding:17px;cursor:pointer;transition:.18s;border-top:4px solid var(--blue)}.stage-card:nth-child(2){border-top-color:var(--gold)}.stage-card:nth-child(3){border-top-color:var(--teal)}.stage-card:hover{transform:translateY(-2px)}.stage-icon{width:42px;height:42px;border-radius:13px;background:var(--blue2);display:grid;place-items:center;font-size:1.2rem;margin-bottom:12px}.stage-card h3{margin:0;color:var(--navy)}.stage-card p{font-size:.88rem;color:var(--muted);margin:6px 0 0}.callout{padding:14px 16px;border-radius:13px;background:#e5f5eb;border:1px solid #b9e2c7;margin:14px 0}.callout.warning{background:#fff4e5;border-color:#f0d5a4}.callout.danger{background:#fceeee;border-color:#f0c5c5}.callout strong{display:block;color:var(--navy);margin-bottom:3px}.checklist{display:grid;gap:9px}.checkrow{display:flex;gap:11px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:11px;background:white}.checkrow input{accent-color:var(--teal);width:18px;height:18px;margin-top:3px;flex-shrink:0}.checkrow label{cursor:pointer;font-size:.92rem}.checkrow:has(input:checked){background:#f0faf4;border-color:#b8dfc7}.checkrow:has(input:checked) label{text-decoration:line-through;color:#5b7865}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:13px;margin:12px 0}table{border-collapse:collapse;width:100%;min-width:540px;background:white}th{background:var(--navy);color:white;text-align:left;font-size:.8rem;padding:12px}td{padding:12px;border-top:1px solid var(--line);font-size:.9rem;vertical-align:top}tr.top-tier td{background:#e5f5eb}.amount{font-size:1.15rem;font-weight:900;color:var(--green);white-space:nowrap}.flow{display:grid;grid-template-columns:1fr 1fr;gap:14px}.flow-card{padding:17px;border-radius:15px;border:1px solid var(--line);background:white}.flow-card.yes{border-top:4px solid var(--green)}.flow-card.no{border-top:4px solid var(--red)}.flow-card h3{margin:0 0 8px}.quiz-question{border:1px solid var(--line);background:white;border-radius:14px;padding:15px;margin:12px 0}.quiz-question h3{font-size:.98rem;margin:0 0 10px}.option{display:flex;gap:9px;padding:7px 8px;border-radius:9px;cursor:pointer}.option:hover{background:#f4f7fa}.option input{accent-color:var(--blue);margin-top:5px}.feedback{margin-top:9px;font-size:.88rem;font-weight:750}.field{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;background:white}.footer{color:var(--muted);font-size:.8rem;padding:24px 0 8px;text-align:center}.mobile-menu{display:none}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--navy);color:white;border-radius:10px;padding:10px 15px;display:none;z-index:30;box-shadow:var(--shadow)}.print-only{display:none}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.sidebar{position:static;display:flex;overflow:auto;gap:3px;padding:7px}.side-label,.progress-wrap{display:none}.nav-btn{white-space:nowrap;width:auto;padding:8px}.nav-num{display:none}.stage-grid{grid-template-columns:1fr}.grid2,.flow{grid-template-columns:1fr}.top-inner{padding:10px 12px}.top-actions .btn{padding:8px 9px}.shell{padding:12px}.stats{gap:8px}.stat{padding:12px}.stat strong{font-size:1.3rem}.section-head{display:block}.pill{display:inline-block;margin-top:8px}}
+@media print{.topbar,.sidebar,.top-actions,.btn,.footer{display:none!important}.layout{display:block}.section{display:block!important;page-break-before:always}.section:first-child{page-break-before:auto}.hero{print-color-adjust:exact;-webkit-print-color-adjust:exact}.shell{max-width:none;padding:0}.panel,.stage-card{box-shadow:none;break-inside:avoid}body{background:white}.print-only{display:block}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="top-inner">
+    <div class="brand"><div class="brand-mark">P</div><span>POSTER PROGRAM <span style="font-weight:400;color:#c8d7e8">/ GUIDE</span></span></div>
+    <div class="top-actions">
+      <button class="btn ghost" id="resetProgress" title="Clear saved checklist progress">Reset progress</button>
+      <button class="btn primary" id="printBtn">Print / Save PDF</button>
+    </div>
+  </div>
+</header>
+<div class="shell">
+  <section class="hero">
+    <div class="eyebrow">Your training hub · Draft v2 · Oct 20, 2026</div>
+    <h1>Learn the process.<br>Own every step.</h1>
+    <p>A clear, practical guide to account setup, warm-up, trial posting, bonuses, safety and what happens next. Complete each section as you go.</p>
+    <div class="journey"><span>01 · Warm-up / 3 days</span><span>02 · Trial / 5 days</span><span>03 · Next steps</span></div>
+  </section>
+  <div class="stats">
+    <div class="stat"><strong>3</strong><span>Platforms · YouTube, Instagram, Facebook</span></div>
+    <div class="stat"><strong>8 days</strong><span>Warm-up + trial timeline</span></div>
+    <div class="stat"><strong>₹300</strong><span>Top trial bonus · corrected</span></div>
+  </div>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Guide navigation">
+      <div class="side-label">Your guide</div>
+      <div class="progress-wrap"><div class="progress-top"><span>Checklist progress</span><span id="progressText">0%</span></div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div></div>
+      <button class="nav-btn active" data-section="overview"><span class="nav-num">⌂</span> Overview</button>
+      <button class="nav-btn" data-section="warmup"><span class="nav-num">01</span> Warm-up</button>
+      <button class="nav-btn" data-section="trial"><span class="nav-num">02</span> Trial & bonuses</button>
+      <button class="nav-btn" data-section="next"><span class="nav-num">03</span> After trial</button>
+      <button class="nav-btn" data-section="safety"><span class="nav-num">!</span> Account safety</button>
+      <button class="nav-btn" data-section="pay"><span class="nav-num">₹</span> Pay summary</button>
+      <button class="nav-btn" data-section="accounts"><span class="nav-num">+</span> Create accounts</button>
+      <button class="nav-btn" data-section="posting"><span class="nav-num">✓</span> Daily posting</button>
+      <button class="nav-btn" data-section="rules"><span class="nav-num">06</span> Six rules</button>
+      <button class="nav-btn" data-section="quiz"><span class="nav-num">?</span> Knowledge quiz</button>
+    </aside>
+    <main class="main">
+      <section class="section active" id="overview">
+        <div class="section-head"><div><h2>Welcome to the program</h2><p>One campaign. One browser. One email. Three social pages.</p></div><span class="pill">Start here</span></div>
+        <div class="panel">
+          <h3>How it works</h3>
+          <p>Each poster runs three accounts — YouTube, Instagram and Facebook — through three stages: <b>Warm-up (3 days) → Trial (5 days) → Clipper assignment or next step.</b></p>
+          <p class="muted small">Every poster completes warm-up and trial. Views after the trial determine whether accounts move to a clipper or waiting list, or whether the poster recreates accounts or drops out.</p>
+        </div>
+        <div class="stage-grid">
+          <article class="stage-card" data-go="warmup"><div class="stage-icon">◷</div><h3>Stage 1 · Warm-up</h3><p>3 days · 30 minutes per day · no posting · ₹100 setup fee after day 3.</p><p><b>Open stage →</b></p></article>
+          <article class="stage-card" data-go="trial"><div class="stage-icon">▤</div><h3>Stage 2 · Trial</h3><p>5 days · one video per day on all three platforms · bonus depends on views.</p><p><b>Open stage →</b></p></article>
+          <article class="stage-card" data-go="next"><div class="stage-icon">↗</div><h3>Stage 3 · Next steps</h3><p>Clipper assignment, waiting list, account recreation or drop-out.</p><p><b>Open stage →</b></p></article>
+        </div>
+        <div class="panel" style="margin-top:14px">
+          <h3>Start-up checklist</h3>
+          <div class="checklist">
+            <div class="checkrow"><input type="checkbox" id="ov1" data-track><label for="ov1">I have read the guide and received my campaign brief.</label></div>
+            <div class="checkrow"><input type="checkbox" id="ov2" data-track><label for="ov2">I know the assigned names, handles, niche and posting time.</label></div>
+            <div class="checkrow"><input type="checkbox" id="ov3" data-track><label for="ov3">I know which browser and email belong to each page.</label></div>
+            <div class="checkrow"><input type="checkbox" id="ov4" data-track><label for="ov4">I know to contact my Post Head before changing or replacing an account.</label></div>
+          </div>
+        </div>
+        <div class="callout warning"><strong>Before you begin</strong>Follow your campaign brief and your Post Head's instructions. If anything conflicts or is unclear, stop and ask before acting.</div>
+      </section>
+
+      <section class="section" id="warmup">
+        <div class="section-head"><div><h2>Stage 1 · Warm-up</h2><p>Build a niche-relevant feed before posting.</p></div><span class="pill">3 days · 30 min/day</span></div>
+        <div class="callout"><strong>Your target</strong>Warm up each account for 30 minutes a day for 3 days. Do not post during warm-up. After day 3, you are paid a ₹100 setup fee.</div>
+        <div class="panel"><h3>Each session</h3><div class="checklist">
+          <div class="checkrow"><input type="checkbox" id="w1" data-track><label for="w1">Search the niche and open the results.</label></div>
+          <div class="checkrow"><input type="checkbox" id="w2" data-track><label for="w2">Watch niche videos all the way to the end; rewatch a good one.</label></div>
+          <div class="checkrow"><input type="checkbox" id="w3" data-track><label for="w3">Like niche videos.</label></div>
+          <div class="checkrow"><input type="checkbox" id="w4" data-track><label for="w4">Follow 3–5 niche accounts a day.</label></div>
+          <div class="checkrow"><input type="checkbox" id="w5" data-track><label for="w5">Leave 2–4 real, specific comments a day — not only emojis.</label></div>
+          <div class="checkrow"><input type="checkbox" id="w6" data-track><label for="w6">Save or share a few niche videos.</label></div>
+          <div class="checkrow"><input type="checkbox" id="w7" data-track><label for="w7">Skip off-niche videos quickly and tap “Not interested”.</label></div>
+        </div></div>
+        <div class="grid2">
+          <div class="panel"><h3>Day 1</h3><p class="small muted">Finish profile; search the niche; watch videos to the end; follow 3–5 accounts; like 5–10 videos. Verify email and phone. No posting.</p><label class="checkrow"><input type="checkbox" id="wd1" data-track><span>Day 1 complete</span></label></div>
+          <div class="panel"><h3>Day 2</h3><p class="small muted">Repeat the routine; follow 3–5 more accounts; leave 2–4 real comments; save a few videos. No posting.</p><label class="checkrow"><input type="checkbox" id="wd2" data-track><span>Day 2 complete</span></label></div>
+          <div class="panel"><h3>Day 3</h3><p class="small muted">Repeat the routine. Check whether the feed is mostly niche. If not, spend extra time on the steps and tell your Post Head.</p><label class="checkrow"><input type="checkbox" id="wd3" data-track><span>Day 3 complete</span></label></div>
+          <div class="panel"><h3>Do / Don't</h3><p class="small"><b>Do:</b> use the account only for its niche, vary sessions, verify email and phone on day 1, keep a daily note.</p><p class="small"><b>Don't:</b> follow or like in bulk (stay under about 20 follows/day), repeat comments, use a second device, or delete and re-upload.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="trial">
+        <div class="section-head"><div><h2>Stage 2 · Trial & bonuses</h2><p>Five days of posting determine trial results.</p></div><span class="pill">5 days · 15 total videos</span></div>
+        <div class="panel"><h3>Trial rules</h3><div class="checklist">
+          <div class="checkrow"><input type="checkbox" id="t1" data-track><label for="t1">I have received the 5 approved videos.</label></div>
+          <div class="checkrow"><input type="checkbox" id="t2" data-track><label for="t2">I will post 1 video a day — the same day's video on all 3 accounts — for 5 days.</label></div>
+          <div class="checkrow"><input type="checkbox" id="t3" data-track><label for="t3">I will submit the live link for every post.</label></div>
+        </div></div>
+        <div class="callout"><strong>Correction confirmed: top bonus = ₹300</strong>A video reaching 1,000+ views on all three platforms earns the top bonus of ₹300 — not ₹200.</div>
+        <div class="table-wrap"><table><thead><tr><th>Bonus</th><th>Trial result</th><th>How it is judged</th></tr></thead><tbody>
+          <tr class="top-tier"><td class="amount">₹300</td><td>1 video reaches 1K+ on all 3 platforms</td><td>The same qualifying video reaches 1,000+ on YouTube, Instagram and Facebook.</td></tr>
+          <tr><td class="amount">₹200</td><td>2 videos reach 1K+ on 2 platforms each</td><td>Two qualifying videos; each crosses 1,000+ on two platforms.</td></tr>
+          <tr><td class="amount">₹100</td><td>1 video reaches 1K+ on 1 or 2 platforms</td><td>One qualifying video crosses 1,000+ on one or two platforms.</td></tr>
+        </tbody></table></div>
+        <div class="panel"><h3>5-day posting tracker</h3><p class="small muted">Tick a day only after posting on all three platforms and submitting the links.</p><div class="checklist" id="trialDays">
+          <div class="checkrow"><input type="checkbox" id="td1" data-track><label for="td1">Day 1 — all 3 platforms posted; links submitted.</label></div>
+          <div class="checkrow"><input type="checkbox" id="td2" data-track><label for="td2">Day 2 — all 3 platforms posted; links submitted.</label></div>
+          <div class="checkrow"><input type="checkbox" id="td3" data-track><label for="td3">Day 3 — all 3 platforms posted; links submitted.</label></div>
+          <div class="checkrow"><input type="checkbox" id="td4" data-track><label for="td4">Day 4 — all 3 platforms posted; links submitted.</label></div>
+          <div class="checkrow"><input type="checkbox" id="td5" data-track><label for="td5">Day 5 — all 3 platforms posted; links submitted.</label></div>
+        </div></div>
+        <div class="panel"><h3>Bonus finder</h3><p class="small muted">Choose the result that matches your trial. This is a guide to the stated tiers, not a live view counter.</p>
+          <label class="checkrow"><input type="radio" name="bonus" value="300"><span><b>₹300</b> — one video reaches 1K+ on all three platforms.</span></label>
+          <label class="checkrow"><input type="radio" name="bonus" value="200"><span><b>₹200</b> — two videos each reach 1K+ on two platforms.</span></label>
+          <label class="checkrow"><input type="radio" name="bonus" value="100"><span><b>₹100</b> — one video reaches 1K+ on one or two platforms.</span></label>
+          <div class="callout" id="bonusResult" aria-live="polite"><strong>Select a tier above</strong>Your matching bonus tier will appear here.</div>
+          <p class="small muted">Bonus targets are judged on the first 5 days of each trial. More than one video crossing 1K does not independently increase the bonus unless another defined tier is met. The bonus is paid each time you complete a trial and hit the targets, including a new trial after recreating accounts.</p>
+        </div>
+      </section>
+
+      <section class="section" id="next">
+        <div class="section-head"><div><h2>Stage 3 · After the trial</h2><p>Use your trial result to confirm the next action.</p></div><span class="pill">Decision flow</span></div>
+        <div class="panel"><h3>Did your accounts get views?</h3><p class="muted small">Your Post Head confirms the result and the next step.</p><div class="flow">
+          <div class="flow-card yes"><h3>✓ Yes — accounts got views</h3><ul><li>You are assigned a clipper or wait until one is available.</li><li>In both cases, you earn the ₹1,000 monthly salary.</li><li>Once assigned, create your accounts on the website, download the clipper's videos and post them.</li></ul></div>
+          <div class="flow-card no"><h3>× No — accounts did not get views</h3><ul><li>Recreate your accounts; you receive a ₹100 recreation fee.</li><li>Or drop out.</li></ul></div>
+        </div></div>
+        <div class="panel"><h3>Confirm your next step</h3><div class="checklist">
+          <div class="checkrow"><input type="checkbox" id="n1" data-track><label for="n1">My Post Head confirmed the trial result.</label></div>
+          <div class="checkrow"><input type="checkbox" id="n2" data-track><label for="n2">I know whether I am assigned a clipper or waiting for one.</label></div>
+          <div class="checkrow"><input type="checkbox" id="n3" data-track><label for="n3">If recreating accounts, I have approval and understand the ₹100 recreation fee.</label></div>
+        </div></div>
+        <div class="callout"><strong>Monthly salary</strong>₹1,000 from day 1 of posting to day 30, whether you are posting or waiting for a clipper. This is separate from the setup fee and trial bonus.</div>
+      </section>
+
+      <section class="section" id="safety">
+        <div class="section-head"><div><h2>Flagged or shadowbanned accounts</h2><p>Do not improvise. Follow the escalation steps.</p></div><span class="pill">Safety first</span></div>
+        <div class="callout danger"><strong>Important</strong>If 2 or 3 accounts get flagged or shadowbanned, your choices are to recreate accounts or drop out. Recreating 1, 2 or 3 accounts has a ₹100 recreation fee.</div>
+        <div class="panel"><h3>Signs of a problem</h3><ul><li>“Action blocked” or “Try again later”.</li><li>Repeated checks or CAPTCHAs.</li><li>A removed or restricted video.</li><li>A copyright notice.</li><li>Non-follower views drop to almost nothing for three videos in a row.</li></ul></div>
+        <div class="panel"><h3>What to do — in order</h3><div class="checklist">
+          <div class="checkrow"><input type="checkbox" id="s1" data-track><label for="s1">Stop all activity on that account for 48 hours.</label></div>
+          <div class="checkrow"><input type="checkbox" id="s2" data-track><label for="s2">Do not log in from another browser, phone or network to check.</label></div>
+          <div class="checkrow"><input type="checkbox" id="s3" data-track><label for="s3">Screenshot the message; note the date, time and last action.</label></div>
+          <div class="checkrow"><input type="checkbox" id="s4" data-track><label for="s4">Tell your Post Head the same day.</label></div>
+          <div class="checkrow"><input type="checkbox" id="s5" data-track><label for="s5">Appeal only if your Post Head asks you to, and only once.</label></div>
+        </div></div>
+        <div class="callout danger"><strong>Never self-replace a banned account</strong>Do not make a new account to replace a banned one without asking your Post Head first.</div>
+      </section>
+
+      <section class="section" id="pay">
+        <div class="section-head"><div><h2>Pay summary</h2><p>Four separate payment types — don't confuse them.</p></div><span class="pill">Payment reference</span></div>
+        <div class="table-wrap"><table><thead><tr><th>Payment</th><th>Amount</th><th>When / why</th></tr></thead><tbody>
+          <tr><td>Setup fee</td><td class="amount">₹100</td><td>Paid after the 3-day warm-up.</td></tr>
+          <tr class="top-tier"><td>Trial bonus</td><td class="amount">₹100 / ₹200 / ₹300</td><td>Based on views after the 5-day trial and the defined tiers.</td></tr>
+          <tr><td>Recreation fee</td><td class="amount">₹100</td><td>When you recreate 1, 2 or 3 accounts.</td></tr>
+          <tr><td>Monthly salary</td><td class="amount">₹1,000</td><td>From day 1 of posting to day 30, whether posting or waiting for a clipper.</td></tr>
+        </tbody></table></div>
+        <div class="panel"><h3>Your notes</h3><div class="grid2"><label class="small">Warm-up completion date<input class="field" id="payDate1" placeholder="e.g. 24 Oct 2026"></label><label class="small">Trial completion date<input class="field" id="payDate2" placeholder="e.g. 29 Oct 2026"></label><label class="small">Bonus tier / amount<input class="field" id="payTier" placeholder="e.g. ₹300"></label><label class="small">Question for Post Head<input class="field" id="payQuestion" placeholder="Type a note"></label></div></div>
+      </section>
+
+      <section class="section" id="accounts">
+        <div class="section-head"><div><h2>Creating the accounts</h2><p>Use the campaign brief and ask before making changes.</p></div><span class="pill">Setup checklist</span></div>
+        <div class="callout warning"><strong>Setup rule</strong>Use the page's own browser on mobile data. Use a new email for every page, but the same email for that page on all three platforms.</div>
+        <div class="panel"><h3>Gmail — do this first</h3><div class="checklist">
+          <div class="checkrow"><input type="checkbox" id="a1" data-track><label for="a1">Create the account at accounts.google.com/signup in the page's browser on mobile data.</label></div>
+          <div class="checkrow"><input type="checkbox" id="a2" data-track><label for="a2">Enter the first and last name from the brief.</label></div>
+          <div class="checkrow"><input type="checkbox" id="a3" data-track><label for="a3">Enter an adult birthday, record it and do not change it.</label></div>
+          <div class="checkrow"><input type="checkbox" id="a4" data-track><label for="a4">Create a short, readable email based on the page name; avoid random strings of numbers.</label></div>
+          <div class="checkrow"><input type="checkbox" id="a5" data-track><label for="a5">Set a unique password of at least 12 characters.</label></div>
+          <div class="checkrow"><input type="checkbox" id="a6" data-track><label for="a6">If asked for a phone number, use only the number allowed by your Post Head; never use a virtual or temporary number.</label></div>
+          <div class="checkrow"><input type="checkbox" id="a7" data-track><label for="a7">Add a recovery email only if your Post Head tells you to.</label></div>
+          <div class="checkrow"><input type="checkbox" id="a8" data-track><label for="a8">If offered browser sign-in or sync, say no.</label></div>
+          <div class="checkrow"><input type="checkbox" id="a9" data-track><label for="a9">Turn on 2-Step Verification with an authenticator app and save backup codes where instructed.</label></div>
+        </div><p class="small muted">Create only one Gmail a day. If Google blocks you or says a phone number was used too many times, stop and tell your Post Head. Do not try another browser or number.</p></div>
+        <div class="grid2">
+          <div class="panel"><h3>Instagram</h3><div class="checklist">
+            <div class="checkrow"><input type="checkbox" id="ig1" data-track><label for="ig1">Sign up using the page Gmail, name, handle and unique password.</label></div>
+            <div class="checkrow"><input type="checkbox" id="ig2" data-track><label for="ig2">Use the same birthday as Gmail and enter the email code.</label></div>
+            <div class="checkrow"><input type="checkbox" id="ig3" data-track><label for="ig3">Skip contacts/find friends; enable two-factor login and save recovery codes.</label></div>
+            <div class="checkrow"><input type="checkbox" id="ig4" data-track><label for="ig4">Fill in the profile, then stop.</label></div>
+          </div></div>
+          <div class="panel"><h3>YouTube</h3><div class="checklist">
+            <div class="checkrow"><input type="checkbox" id="yt1" data-track><label for="yt1">Sign in with the page Gmail and create a channel using the brief's name and handle.</label></div>
+            <div class="checkrow"><input type="checkbox" id="yt2" data-track><label for="yt2">In YouTube Studio, set country and audience to “No, it's not made for kids”.</label></div>
+            <div class="checkrow"><input type="checkbox" id="yt3" data-track><label for="yt3">Verify at youtube.com/verify and fill in the profile.</label></div>
+          </div></div>
+        </div>
+        <div class="panel"><h3>Facebook</h3><p>Your Post Head tells you whether to use a Facebook Page or profile, and who creates it. Ask before creating anything. Use the same browser, page Gmail and profile rules.</p></div>
+        <div class="panel"><h3>Profile rules — all platforms</h3><div class="checklist">
+          <div class="checkrow"><input type="checkbox" id="pr1" data-track><label for="pr1">Name and handle exactly as in the brief, in the same style on all platforms.</label></div>
+          <div class="checkrow"><input type="checkbox" id="pr2" data-track><label for="pr2">Use the campaign logo or a clean picture that fits the topic.</label></div>
+          <div class="checkrow"><input type="checkbox" id="pr3" data-track><label for="pr3">Bio: one or two plain lines about the topic; no money claims and no links until warm-up is over.</label></div>
+          <div class="checkrow"><input type="checkbox" id="pr4" data-track><label for="pr4">Do not change the name, handle or picture for 30 days.</label></div>
+        </div></div>
+      </section>
+
+      <section class="section" id="posting">
+        <div class="section-head"><div><h2>Daily posting workflow</h2><p>Run the same checks every posting day.</p></div><span class="pill">Daily checklist</span></div>
+        <div class="panel"><h3>Before, during and after publishing</h3><div class="checklist">
+          <div class="checkrow"><input type="checkbox" id="p1" data-track><label for="p1">Open the correct browser for today's page and check the label.</label></div>
+          <div class="checkrow"><input type="checkbox" id="p2" data-track><label for="p2">Use mobile data; no VPN.</label></div>
+          <div class="checkrow"><input type="checkbox" id="p3" data-track><label for="p3">Browse 5–10 minutes: watch niche videos, like one or two, reply to comments.</label></div>
+          <div class="checkrow"><input type="checkbox" id="p4" data-track><label for="p4">Check the approved video was made for this account and has not been posted elsewhere.</label></div>
+          <div class="checkrow"><input type="checkbox" id="p5" data-track><label for="p5">Play it once more and confirm it has sound.</label></div>
+          <div class="checkrow"><input type="checkbox" id="p6" data-track><label for="p6">Upload using the platform's own site and publish at the assigned time.</label></div>
+          <div class="checkrow"><input type="checkbox" id="p7" data-track><label for="p7">Confirm it is live; check the title and first line; copy the link.</label></div>
+          <div class="checkrow"><input type="checkbox" id="p8" data-track><label for="p8">Browse a few more minutes, close the browser, then submit the link on the tracking website.</label></div>
+        </div></div>
+        <div class="grid2">
+          <div class="panel"><h3>Title rules</h3><ul><li>Put the hook or subject first.</li><li>Copy the text shown at the top of the video as the title; do not rewrite it.</li><li>Add emojis that match the video's feeling.</li><li>Never use the same title twice on the same account.</li><li>Follow campaign-specific title instructions if different.</li></ul><p><b>Exaggerate the feeling, not the facts.</b> Do not promise what the video does not show.</p></div>
+          <div class="panel"><h3>Upload steps</h3><p class="small"><b>Instagram:</b> Create → Post → choose file → pick cover → add title and hashtags → Share.</p><p class="small"><b>YouTube:</b> Studio → Create → Upload videos → choose file → add title and description → set audience → Public → Publish.</p><p class="small"><b>Facebook:</b> open assigned Page → Reel → choose file → add title and hashtags → Publish.</p></div>
+        </div>
+        <div class="callout warning"><strong>Do not cross-post automatically</strong>Post on each platform separately. Do not use “also share to Facebook” or scheduling tools unless your Post Head says yes. After posting, do not keep editing the title or cover, and never delete and re-upload.</div>
+      </section>
+
+      <section class="section" id="rules">
+        <div class="section-head"><div><h2>The six rules</h2><p>Memorize these. They govern your daily workflow.</p></div><span class="pill">Must follow</span></div>
+        <div class="grid2">
+          <div class="panel"><h3>01 · One page = one browser</h3><p class="small">Install a separate browser for each page (Brave, Firefox or Edge). Do not use your default browser.</p></div>
+          <div class="panel"><h3>02 · Never mix pages in one browser</h3><p class="small">Never log in to or out of different pages in the same browser, even in incognito.</p></div>
+          <div class="panel"><h3>03 · Use the same mobile data</h3><p class="small">Use your own mobile data from the same SIM every day. On a laptop, share your phone's hotspot. No hostel, public or shared Wi-Fi, VPN or free proxy.</p></div>
+          <div class="panel"><h3>04 · Work by hand</h3><p class="small">No bots, auto-posting tools, buying followers or views.</p></div>
+          <div class="panel"><h3>05 · One video per day</h3><p class="small">Post at the same time every day. If you miss a day, don't catch up by yourself; ask your Post Head.</p></div>
+          <div class="panel"><h3>06 · Stop and report problems</h3><p class="small">If something looks wrong, stop and tell your Post Head the same day. Do not try to fix it yourself.</p></div>
+        </div>
+        <div class="panel"><h3>Never do this</h3><div class="checklist">
+          <div class="checkrow"><input type="checkbox" id="r1" data-track><label for="r1">Use the same email, phone number or password on two different pages.</label></div>
+          <div class="checkrow"><input type="checkbox" id="r2" data-track><label for="r2">Post the same file on two accounts or use a clip with another app's watermark.</label></div>
+          <div class="checkrow"><input type="checkbox" id="r3" data-track><label for="r3">Make a replacement account for a banned or restricted one without asking.</label></div>
+          <div class="checkrow"><input type="checkbox" id="r4" data-track><label for="r4">Use posting/scheduling tools without approval, cross-post switches, or delete and re-upload.</label></div>
+        </div></div>
+      </section>
+
+      <section class="section" id="quiz">
+        <div class="section-head"><div><h2>Knowledge quiz</h2><p>Check whether you understand the rules before starting.</p></div><span class="pill">10 questions</span></div>
+        <div class="panel"><p class="muted small">Choose one answer per question, then select “Check my score”. You can retry after reviewing any missed topic.</p><div id="quizContainer"></div><button class="btn primary" id="gradeQuiz">Check my score</button> <button class="btn" id="retryQuiz">Try again</button><div id="quizScore" class="callout" style="display:none" aria-live="polite"></div></div>
+        <div class="panel"><h3>Ready-to-start checklist</h3><div class="checklist">
+          <div class="checkrow"><input type="checkbox" id="qf1" data-track><label for="qf1">I know my campaign, niche, names, handles and posting time.</label></div>
+          <div class="checkrow"><input type="checkbox" id="qf2" data-track><label for="qf2">I understand the 3-day warm-up and 5-day trial.</label></div>
+          <div class="checkrow"><input type="checkbox" id="qf3" data-track><label for="qf3">I understand the correct ₹300 top bonus and other bonus tiers.</label></div>
+          <div class="checkrow"><input type="checkbox" id="qf4" data-track><label for="qf4">I know how to submit links and report account problems.</label></div>
+          <div class="checkrow"><input type="checkbox" id="qf5" data-track><label for="qf5">I will ask my Post Head before changing setup or replacing an account.</label></div>
+        </div></div>
+      </section>
+      <div class="footer">Poster Program Guide · Based on the source guide dated October 20, 2026 · Save progress in this browser.</div>
+    </main>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const sectionNames={overview:"Overview",warmup:"Stage 1 — Warm-up",trial:"Stage 2 — Trial & bonuses",next:"Stage 3 — After trial",safety:"Flagged accounts",pay:"Pay summary",accounts:"Creating accounts",posting:"Daily posting",rules:"The six rules",quiz:"Knowledge quiz"};
+function showSection(id){document.querySelectorAll(".section").forEach(s=>s.classList.toggle("active",s.id===id));document.querySelectorAll(".nav-btn").forEach(b=>b.classList.toggle("active",b.dataset.section===id));window.scrollTo({top:0,behavior:"smooth"});}
+document.querySelectorAll(".nav-btn").forEach(b=>b.addEventListener("click",()=>showSection(b.dataset.section)));
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>showSection(b.dataset.go)));
+const checkboxes=[...document.querySelectorAll("input[data-track]")];
+function loadProgress(){checkboxes.forEach(el=>{el.checked=localStorage.getItem("poster-guide-"+el.id)==="1"});["payDate1","payDate2","payTier","payQuestion"].forEach(id=>{const el=document.getElementById(id);if(el)el.value=localStorage.getItem("poster-guide-"+id)||""});updateProgress()}
+function updateProgress(){const total=checkboxes.length;const done=checkboxes.filter(x=>x.checked).length;const pct=total?Math.round(done/total*100):0;document.getElementById("progressText").textContent=pct+"%";document.getElementById("progressFill").style.width=pct+"%";}
+checkboxes.forEach(el=>el.addEventListener("change",()=>{localStorage.setItem("poster-guide-"+el.id,el.checked?"1":"0");updateProgress()}));
+["payDate1","payDate2","payTier","payQuestion"].forEach(id=>{const el=document.getElementById(id);el.addEventListener("input",()=>localStorage.setItem("poster-guide-"+id,el.value))});
+document.getElementById("resetProgress").addEventListener("click",()=>{if(confirm("Clear saved checklist progress and notes in this browser?")){checkboxes.forEach(el=>{el.checked=false;localStorage.removeItem("poster-guide-"+el.id)});["payDate1","payDate2","payTier","payQuestion"].forEach(id=>{localStorage.removeItem("poster-guide-"+id);document.getElementById(id).value=""});updateProgress();showToast("Progress reset.")}});
+document.getElementById("printBtn").addEventListener("click",()=>window.print());
+document.querySelectorAll('input[name="bonus"]').forEach(el=>el.addEventListener("change",()=>{const val=el.value;const map={"300":"Top tier selected: ₹300 — one video reaches 1,000+ views on all 3 platforms.","200":"Middle tier selected: ₹200 — two videos each reach 1,000+ views on two platforms.","100":"Base tier selected: ₹100 — one video reaches 1,000+ views on one or two platforms."};document.getElementById("bonusResult").innerHTML="<strong>Selected bonus: ₹"+val+"</strong>"+map[val]}));
+const qs=[
+{q:"How long is the warm-up stage?",o:["1 day","3 days","5 days"],a:1,why:"Warm-up lasts 3 days, with 30 minutes per day and no posting."},
+{q:"How long should you warm up each account per day?",o:["10 minutes","30 minutes","60 minutes"],a:1,why:"The guide specifies 30 minutes per day for 3 days."},
+{q:"How many videos are reviewed after the 5-day trial across all platforms?",o:["5","10","15"],a:2,why:"Five videos per platform across three platforms means 15 videos."},
+{q:"What is the top trial bonus when one video reaches 1,000+ views on all 3 platforms?",o:["₹100","₹200","₹300"],a:2,why:"The corrected top bonus is ₹300."},
+{q:"What is the setup fee after warm-up?",o:["₹100","₹300","₹1,000"],a:0,why:"The setup fee is ₹100 after the 3-day warm-up."},
+{q:"An account shows “Action blocked”. What should you do?",o:["Log in on another phone","Stop activity for 48 hours and report it","Delete it immediately"],a:1,why:"Stop activity for 48 hours, document the issue and tell your Post Head the same day."},
+{q:"Who owns the accounts?",o:["The poster","The agency","The platform"],a:1,why:"The source guide says all accounts belong to the agency."},
+{q:"If you miss a posting day, what should you do?",o:["Upload two videos the next day","Delete the previous video","Ask your Post Head"],a:2,why:"Do not catch up independently; ask your Post Head."},
+{q:"Is the ₹1,000 monthly salary separate from the setup fee and trial bonus?",o:["Yes","No","Only sometimes"],a:0,why:"The salary, setup fee and trial bonus are separate payments."},
+{q:"Can you replace a banned account without asking your Post Head?",o:["Yes","No"],a:1,why:"Do not make a replacement account without asking your Post Head first."}
+];
+function renderQuiz(){const c=document.getElementById("quizContainer");c.innerHTML="";qs.forEach((q,i)=>{const box=document.createElement("div");box.className="quiz-question";const h=document.createElement("h3");h.textContent=(i+1)+". "+q.q;box.appendChild(h);q.o.forEach((opt,j)=>{const lab=document.createElement("label");lab.className="option";const inp=document.createElement("input");inp.type="radio";inp.name="quiz"+i;inp.value=j;const span=document.createElement("span");span.textContent=opt;lab.append(inp,span);box.appendChild(lab)});const fb=document.createElement("div");fb.className="feedback";fb.id="feedback"+i;box.appendChild(fb);c.appendChild(box)})}
+renderQuiz();
+document.getElementById("gradeQuiz").addEventListener("click",()=>{let score=0,answered=0;qs.forEach((q,i)=>{const chosen=document.querySelector('input[name="quiz'+i+'"]:checked');const fb=document.getElementById("feedback"+i);if(!chosen){fb.style.color="#b64242";fb.textContent="Choose an answer.";return}answered++;const correct=Number(chosen.value)===q.a;if(correct)score++;fb.style.color=correct?"#277a4b":"#b64242";fb.textContent=(correct?"Correct. ":"Not quite. ")+q.why});const box=document.getElementById("quizScore");box.style.display="block";box.innerHTML="<strong>Your score: "+score+"/10</strong>You answered "+answered+" of 10 questions. "+(score===10?"All correct — you are ready to review the guide and follow your Post Head's instructions.":score>=8?"Good. Review the explanations for any missed questions.":"Review the relevant sections, then try again.");box.scrollIntoView({behavior:"smooth",block:"nearest"})});
+document.getElementById("retryQuiz").addEventListener("click",()=>{document.querySelectorAll('#quizContainer input[type="radio"]').forEach(i=>i.checked=false);document.querySelectorAll(".feedback").forEach(f=>f.textContent="");document.getElementById("quizScore").style.display="none"});
+function showToast(s){const t=document.getElementById("toast");t.textContent=s;t.style.display="block";setTimeout(()=>t.style.display="none",2200)}
+loadProgress();
+</script>
+</body>
+</html>
